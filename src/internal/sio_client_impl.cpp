@@ -188,6 +188,7 @@ namespace sio
     void client_impl::set_logs_quiet()
     {
         m_client.clear_access_channels(websocketpp::log::alevel::all);
+		m_client.clear_error_channels(websocketpp::log::elevel::all);
     }
 
     void client_impl::set_logs_verbose()
